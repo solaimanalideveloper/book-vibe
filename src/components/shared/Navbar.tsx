@@ -7,10 +7,10 @@ const Navbar = () => {
       <div className="flex gap-3">
         <li>
           <Link
-            href="/components/homepage"
+            href="/books"
             className="text-[#23BE0A] border border-[#23BE0A]"
           >
-            Home
+            Books
           </Link>
         </li>
         <li>
