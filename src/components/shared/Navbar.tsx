@@ -14,13 +14,19 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/listed-books" className="text-[#23BE0A] border border-[#23BE0A]">
+          <Link
+            href="/listed-books"
+            className="text-[#23BE0A] border border-[#23BE0A]"
+          >
             Listed Books
           </Link>
         </li>
         <li>
-          <Link href="/Home" className="text-[#23BE0A] border border-[#23BE0A]">
-            Pages to Read
+          <Link
+            href="/read-books"
+            className="text-[#23BE0A] border border-[#23BE0A]"
+          >
+            Read Books
           </Link>
         </li>
       </div>
