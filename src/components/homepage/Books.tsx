@@ -2,14 +2,16 @@ import { IBook } from "@/types/books.type";
 import BooksCard from "../shared/BooksCard";
 
 const getBooks = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`,
-  );
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error("Data fetch Failed");
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`,
+    );
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching books data:", error);
+    return [];
   }
-  return data;
 };
 
 const Books = async () => {
